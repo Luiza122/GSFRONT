@@ -18,25 +18,20 @@
   a {
     text-decoration: none;
     color: inherit;
-    transition: color 0.3s;
-  }
-  
-  a:hover {
-    color: #52b788; /* Destaque ao passar o mouse */
   }
   
   ul {
     list-style: none;
   }
   
-  /* Layout Principal */
+  /* Configurações gerais do layout */
   .wrapper {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
   
-  /* Header */
+  /* Header estilizado */
   .header {
     background: linear-gradient(to right, #2d6a4f, #40916c);
     color: white;
@@ -63,14 +58,14 @@
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
   }
   
-  /* Conteúdo */
+  /* Conteúdo principal */
   .content {
     flex: 1;
     display: flex;
@@ -80,6 +75,7 @@
     padding: 20px;
   }
   
+  /* Hero Section */
   .hero {
     background: linear-gradient(to right, #95d5b2, #52b788);
     color: white;
@@ -102,6 +98,7 @@
   }
   
   .btn-primary {
+    display: inline-block;
     background: #1b4332;
     color: white;
     padding: 10px 20px;
@@ -116,19 +113,281 @@
     transform: scale(1.05);
   }
   
-  /* Footer */
+  /* Footer estilizado */
   .footer {
     background: #1b4332;
     color: white;
     text-align: center;
     padding: 15px 20px;
     font-size: 0.9rem;
-    margin-top: auto;
+    margin-top: auto; /* Garante que o footer fique no final */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Cartões de Funcionalidades */
-  .features {
+  /* Seções adicionais */
+  .section {
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #40916c;
+    text-align: center;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Estilo para a seção Comunidade */
+.community {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .community h2 {
+    font-size: 2.5rem;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+  }
+  
+  .community p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  /* Estatísticas */
+  .community-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .stat {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #40916c;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Depoimentos */
+  .testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonials h3 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Gamificação */
+  .gamification {
+    margin-top: 40px;
+  }
+  
+  .gamification h3 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .leaderboard th, .leaderboard td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .leaderboard th {
+    background: #40916c;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .leaderboard td {
+    background: #fff;
+    color: #555;
+  }
+  
+  /* Eventos */
+  .events {
+    margin-top: 40px;
+  }
+  
+  .events h3 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+  }
+  
+  .events ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .events ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .events ul li strong {
+    color: #40916c;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .community-stats {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .stat {
+      width: 100%;
+    }
+  
+    .btn-primary {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Formulário de Contato */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .contact button {
+    background: #40916c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .contact button:hover {
+    background: #1b4332;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilo Geral da Seção Funcionalidades */
+.features {
     padding: 50px 20px;
     background: #f7f7f7;
     text-align: center;
@@ -147,11 +406,12 @@
     line-height: 1.6;
   }
   
+  /* Container dos Cartões */
   .feature-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
   }
   
   .feature-card {
@@ -159,7 +419,7 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1;
     max-width: 300px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -184,7 +444,7 @@
   
   .feature-card ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
   }
   
   .feature-card ul li {
@@ -209,16 +469,16 @@
   
   .extras {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
   }
   
   .extra {
     background: white;
     border-radius: 10px;
     padding: 20px;
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1;
     max-width: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -238,27 +498,5 @@
   .extra p {
     font-size: 1rem;
     color: #555;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .hero h2 {
-      font-size: 2rem;
-    }
-  
-    .feature-container, .extras {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .btn-primary {
-      padding: 8px 15px;
-      font-size: 0.9rem;
-    }
   }
   
