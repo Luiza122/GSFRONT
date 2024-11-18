@@ -1,0 +1,48 @@
+.contato {
+    padding: 4rem 0;
+  
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      .form-label {
+        font-size: 1rem;
+        color: $text-color;
+      }
+  
+      .form-control {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid $primary-color;
+  
+        &:focus {
+          border-color: darken($primary-color, 10%);
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+      }
+  
+      button {
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+  
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+      

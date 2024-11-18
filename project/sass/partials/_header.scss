@@ -1,0 +1,22 @@
+.header {
+    nav {
+      background-color: $primary-color;
+  
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+  
+      .nav-link {
+        font-size: 1rem;
+        color: #fff;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: lighten($primary-color, 30%);
+        }
+      }
+    }
+  }
+  

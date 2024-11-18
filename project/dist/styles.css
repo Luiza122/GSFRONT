@@ -1,0 +1,445 @@
+@charset "UTF-8";
+.header nav {
+  background-color: #0056b3;
+}
+.header nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.header nav .nav-link {
+  font-size: 1rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+.header nav .nav-link:hover {
+  color: rgb(153, 202.2, 255);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero-bg.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.hero .btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  background-color: #0056b3;
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.hero .btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 12px 20px rgba(0, 123, 255, 0.5);
+  transform: translateY(-3px);
+}
+.tipos {
+  background-color: #f8f9fa; 
+  padding: 4rem 0;
+}
+
+.tipos h2 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 3rem;
+  text-align: center; 
+}
+
+.tipos .card {
+  border: none; 
+  background: #ffffff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  padding: 1.5rem; 
+}
+
+.tipos .card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.tipos .card .card-img-top {
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  margin-bottom: 1rem;
+  border-radius: 0; 
+}
+
+.tipos .card .card-title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: #0056b3; 
+  margin-bottom: 0.5rem;
+  text-align: center; 
+}
+
+.tipos .card .card-text {
+  font-size: 1rem; 
+  color: #6c757d; 
+  text-align: center;
+  line-height: 1.6; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tipos .card {
+    margin-bottom: 2rem;
+  }
+
+  .tipos h2 {
+    font-size: 2rem; 
+  }
+}
+
+
+
+
+
+
+
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  color: #0056b3; 
+  font-size: 2.5rem; 
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.section p {
+  text-align: center;
+  color: #6c757d; 
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section ul li {
+  display: flex; 
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.section ul li:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.section ul li::before {
+  content: "✔"; 
+  display: inline-block;
+  margin-right: 1rem; 
+  color: #0056b3; 
+  font-size: 1.8rem; 
+  flex-shrink: 0; 
+  transition: color 0.3s ease; 
+}
+
+.section ul li:hover::before {
+  color: #28a745; 
+}
+
+.section ul li h5 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0056b3; 
+}
+
+.section ul li p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6c757d; 
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section ul li {
+    flex-direction: column; 
+    text-align: center; 
+    padding: 1.5rem;
+  }
+
+  .section ul li::before {
+    font-size: 1.5rem; 
+    margin-bottom: 0.5rem; 
+    margin-right: 0; 
+  }
+
+  .section ul li h5 {
+    font-size: 1.2rem; 
+  }
+
+  .section ul li p {
+    font-size: 0.9rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background-color: #0056b3;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo da Seção de Vídeos */
+.videos h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.videos p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Ajustes para o Carrossel */
+.carousel-indicators button {
+  background-color: #0056b3;
+}
+
+.carousel-indicators .active {
+  background-color: #28a745;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-item iframe {
+  border-radius: 10px;
+}
+
+
+
+
+
+.contato {
+  padding: 4rem 0;
+}
+.contato h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 2rem;
+}
+.contato form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contato form .form-label {
+  font-size: 1rem;
+  color: #212529;
+}
+.contato form .form-control {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #0056b3;
+}
+.contato form .form-control:focus {
+  border-color: rgb(0, 98.4, 204);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.contato form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contato form button:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */
+
+
+
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header .navbar {
+  padding: 1rem 0;
+}
+
+.header .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-section {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.hero-section .btn {
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #003f7f;
+  transform: translateY(-3px);
+}
+
+/* Seção Energia Limpa */
+#energia-limpa {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+#energia-limpa h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#energia-limpa p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+#energia-limpa img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  #energia-limpa img {
+    margin-bottom: 1.5rem;
+  }
+
+  #energia-limpa p {
+    font-size: 1rem;
+  }
+}

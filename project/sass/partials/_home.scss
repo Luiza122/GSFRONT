@@ -1,0 +1,43 @@
+.hero-section {
+  background: url('../img/fundo1.png') no-repeat center center/cover; /* Define a imagem de fundo */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex; /* Flexbox para centralização */
+  flex-direction: column; /* Alinha itens em uma coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Alinha o texto no centro */
+  color: #fff; /* Texto branco para contraste */
+
+  h1 {
+    font-size: 3.5rem; /* Tamanho grande para destaque */
+    font-weight: bold; /* Negrito */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para melhor visibilidade */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+  }
+
+  p {
+    font-size: 1.25rem; /* Tamanho do parágrafo */
+    font-weight: 300; /* Texto leve */
+    max-width: 600px; /* Largura máxima para limitar o texto */
+    margin: 0 auto 2rem; /* Centraliza horizontalmente */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para contraste */
+  }
+
+  .btn {
+    padding: 1rem 2rem; /* Tamanho interno do botão */
+    font-size: 1.2rem; /* Texto do botão */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+    border-radius: 50px; /* Botão arredondado */
+    background-color: #007bff; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Sombra */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+
+    &:hover {
+      background-color: #0056b3; /* Cor no hover */
+      box-shadow: 0 12px 20px rgba(0, 123, 255, 0.5); /* Sombra mais intensa no hover */
+      transform: translateY(-3px); /* Elevação no hover */
+    }
+  }
+}
