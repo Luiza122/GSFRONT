@@ -276,7 +276,7 @@ main {
 .videos h2 {
   font-size: 2.5rem; 
   font-weight: bold;
-  color: #080f16;
+  color: black;
   margin-bottom: 3rem;
   text-align: center; 
 }
@@ -292,7 +292,7 @@ main {
 }
 
 .carousel-indicators .active {
-  background-color: #28a745;
+  background-color: #020502;
 }
 
 .carousel-control-prev-icon,
@@ -358,54 +358,7 @@ main {
 
 
 
-/* Geral */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-/* Header */
-.header .navbar {
-  padding: 1rem 0;
-}
-
-.header .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.hero-section {
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
-
-.hero-section h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-}
-
-.hero-section .btn {
-  background-color: #080d11;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-section .btn:hover {
-  background-color: #010102;
-  transform: translateY(-3px);
-}
 
 /* Seção Energia Limpa */
 #energia-limpa {
