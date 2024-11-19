@@ -6,12 +6,85 @@
   <title>Energia Limpa - Home</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="dist/styles.css">
+  <style>
+    /* Hero Section */
+    .hero-header {
+      background: url('img/energia-limpa.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+    .hero-header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    /* Vantagens Section */
+    .vantagens-section img {
+      width: 80px; /* Ajusta o tamanho dos ícones */
+      height: auto;
+      margin-bottom: 15px;
+      background-color: transparent; /* Remove qualquer fundo aplicado pelo CSS */
+      border: none;
+    }
+    .vantagens-section h5 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    
+
+    /* Footer */
+    .footer {
+      background-color: rgba(29, 23, 23, 0.5);
+      color: white;
+      padding: 40px 20px;
+    }
+    .footer h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer p, .footer a {
+      font-size: 0.9rem;
+      color: #e7ebe7;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <header>
+    <div class="hero-header">
+      <h1>Transformando o Futuro com Energia Sustentável</h1>
+      <p>Unindo forças para preservar nosso planeta e adotar fontes de energia renováveis.</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Energia Limpa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -28,17 +101,11 @@
         </div>
       </div>
     </nav>
-    <div>
-        <div class="hero-section text-center text-black d-flex align-items-center justify-content-center" 
-         style="background: url('img/energia-limpa.jpg') no-repeat center center/cover; height: 50vh;">
-        <div>
-        <h1>Energia Limpa: Transformando o Futuro</h1>
-        <p>Descubra como tecnologias sustentáveis estão moldando nosso mundo.</p>
-        <a href="tipos.html" class="btn btn-light mt-3">Saiba Mais</a>
-    </div>
   </header>
+
+  <!-- Main Content -->
   <main class="container my-5">
-    <!-- Sobre Energia Limpa -->
+    <!-- O que é Energia Limpa -->
     <section id="energia-limpa" class="my-5">
       <h2 class="text-center mb-4">O que é Energia Limpa?</h2>
       <div class="row">
@@ -46,16 +113,76 @@
           <img src="img/renováveis.jpg" alt="Energia Limpa" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-6">
-          <p class="lead">A energia limpa é um sistema de produção de energia que não emite poluentes na atmosfera ou tem impacto ambiental mínimo. É uma alternativa mais sustentável em comparação à produção de energia a partir de combustíveis fósseis, como petróleo e carvão, que contribuem para o agravamento do efeito estufa e das mudanças climáticas.</p>
+          <p class="lead">A energia limpa é um sistema de produção de energia que não emite poluentes na atmosfera ou tem impacto ambiental mínimo. É uma alternativa mais sustentável em comparação à produção de energia a partir de combustíveis fósseis.</p>
           <p>Adotar energias limpas ajuda a preservar os recursos naturais, proteger a biodiversidade e reduzir a dependência de recursos não renováveis, promovendo um futuro mais sustentável para o planeta.</p>
         </div>
       </div>
     </section>
-    </main>
+
+    <!-- Vantagens da Energia Limpa -->
+    <section id="vantagens" class="vantagens-section my-5">
+      <h2 class="text-center mb-4">Vantagens da Energia Limpa</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="img/sustentabilidade.png" alt="Sustentabilidade" class="img-fluid rounded shadow-sm">
+          <h5>Sustentabilidade</h5>
+          <p>A energia limpa utiliza recursos naturais renováveis, como o sol, vento e água, sem esgotá-los.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/economia.png" alt="Economia" class="img-fluid rounded shadow-sm">
+          <h5>Economia</h5>
+          <p>Reduz os custos de longo prazo e diminui a dependência de combustíveis fósseis.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/saude.png" alt="Saúde e Meio Ambiente" class="img-fluid rounded shadow-sm">
+          <h5>Saúde e Meio Ambiente</h5>
+          <p>Reduz a poluição do ar e melhora a qualidade de vida das pessoas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contribuir" class="my-5">
+      <h2 class="text-center mb-4">Como Você Pode Contribuir?</h2>
+      <p>Contribuir para o uso de energia limpa não é difícil! Aqui estão algumas maneiras:</p>
+      <ul>
+        <li>Instalar painéis solares em casa ou na empresa.</li>
+        <li>Optar por fornecedores de energia renovável.</li>
+        <li>Economizar energia desligando equipamentos quando não estão em uso.</li>
+        <li>Promover o uso de transporte público ou veículos elétricos.</li>
+      </ul>
+    </section>
+  
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
-    <p>Saiba mais sobre <a href="contato.html">como contribuir</a> para um futuro sustentável.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>Nosso objetivo é conscientizar e incentivar o uso de fontes de energia limpa e renovável, contribuindo para um futuro mais sustentável.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links Úteis</h5>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="tipos.html">Tipos de Energia</a></p>
+          <p><a href="beneficios.html">Benefícios</a></p>
+          <p><a href="contato.html">Contato</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <div>
+            <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+            <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+            <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+            <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
