@@ -3,15 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energia Limpa - Home</title>
+  <title>Energia Limpa - Benefícios</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="dist/styles.css">
+  <style>
+    /* Header e Footer */
+     /* Hero Section */
+     .hero-header {
+      background: url('img/energia-limpa.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+    .hero-header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+    /* Benefícios Section */
+    .benefits-section {
+      padding: 60px 0;
+      background: linear-gradient(135deg, #f8f9fa 50%, #e9f5ee 50%);
+    }
+    .benefits-section h2 {
+      color: #1b4332;
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    .benefit-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      padding: 20px;
+      text-align: center;
+    }
+    .benefit-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .benefit-card i {
+      font-size: 3rem;
+      color: #1b4332;
+      margin-bottom: 15px;
+    }
+    .benefit-card h5 {
+      font-weight: bold;
+      color: #1b4332;
+      margin-bottom: 10px;
+    }
+    .benefit-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Separador */
+    .separator {
+      width: 80px;
+      height: 4px;
+      background: #1b4332;
+      margin: 20px auto;
+    }
+
+    /* Impacto Social */
+    .impact-section {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+    .impact-card {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .impact-card:hover {
+      transform: translateY(-5px);
+    }
+    .impact-card i {
+      font-size: 3rem;
+      color: #1b4332;
+      margin-right: 20px;
+    }
+    .impact-card h5 {
+      color: #1b4332;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .impact-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      background-color: rgba(48, 45, 45, 0.5);
+      color: white;
+      padding: 40px 20px;
+    }
+    .footer h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer p, .footer a {
+      font-size: 0.9rem;
+      color: #e7ebe7;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  
+  <header>
+    <div class="hero-header">
+      <h1>Transformando o Futuro com Energia Sustentável</h1>
+      <p>Unindo forças para preservar nosso planeta e adotar fontes de energia renováveis.</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Energia Limpa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,82 +167,93 @@
   </header>
 
   <!-- Benefícios -->
-  <section id="beneficios" class="section">
+  <section class="benefits-section">
     <div class="container">
-      <h2 class="text-center mb-4">Benefícios da Energia Limpa</h2>
-      <ul class="list-unstyled">
-        <li class="d-flex align-items-start mb-4">
-          <i class="fas fa-check-circle fa-2x text-success me-3"></i>
-          <div>
-            <h5 class="mb-1">Redução de emissões de gases de efeito estufa</h5>
-            <p class="text-muted">A energia limpa contribui para um ar mais puro e uma redução significativa no impacto ambiental.</p>
+      <h2 class="text-center">Benefícios da Energia Limpa</h2>
+      <div class="separator"></div>
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-leaf"></i>
+            <h5>Ar mais limpo</h5>
+            <p>Redução de poluentes e gases de efeito estufa para um ar mais puro.</p>
           </div>
-        </li>
-        <li class="d-flex align-items-start mb-4">
-          <i class="fas fa-check-circle fa-2x text-success me-3"></i>
-          <div>
-            <h5 class="mb-1">Conservação de recursos naturais</h5>
-            <p class="text-muted">O uso de fontes renováveis ajuda a preservar os recursos naturais para as futuras gerações.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-globe"></i>
+            <h5>Preservação</h5>
+            <p>Conservação de recursos naturais essenciais para futuras gerações.</p>
           </div>
-        </li>
-        <li class="d-flex align-items-start mb-4">
-          <i class="fas fa-check-circle fa-2x text-success me-3"></i>
-          <div>
-            <h5 class="mb-1">Estímulo à economia local</h5>
-            <p class="text-muted">A transição para energia limpa cria novas oportunidades de empregos em setores sustentáveis.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-chart-line"></i>
+            <h5>Economia Verde</h5>
+            <p>Oportunidades de emprego e crescimento econômico sustentável.</p>
           </div>
-        </li>
-        <li class="d-flex align-items-start mb-4">
-          <i class="fas fa-check-circle fa-2x text-success me-3"></i>
-          <div>
-            <h5 class="mb-1">Promoção da sustentabilidade ambiental</h5>
-            <p class="text-muted">Uma economia baseada em energia limpa é essencial para um futuro sustentável.</p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
-
- 
 
   <!-- Impacto Social -->
-  <section id="impacto-social" class="section">
+  <section class="impact-section">
     <div class="container">
-      <h2 class="text-center mb-4">Impacto Social</h2>
-      <p class="text-center text-muted mb-5">
-        A energia limpa não é apenas boa para o planeta, mas também para as pessoas. Veja como ela pode melhorar a vida de milhões:
-      </p>
-      <ul class="list-unstyled">
-        <li class="d-flex align-items-start mb-3">
-          <i class="fas fa-hand-holding-heart fa-2x text-primary me-3"></i>
-          <div>
-            <h5 class="mb-1">Comunidades Rurais</h5>
-            <p class="text-muted">Leva eletricidade para áreas remotas, melhorando a qualidade de vida e o acesso a recursos básicos.</p>
+      <h2 class="text-center">Impacto Social</h2>
+      <div class="separator"></div>
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+          <div class="impact-card">
+            <i class="fas fa-lightbulb"></i>
+            <div>
+              <h5>Comunidades Rurais</h5>
+              <p>Energia limpa leva eletricidade para áreas remotas, melhorando vidas.</p>
+            </div>
           </div>
-        </li>
-        <li class="d-flex align-items-start mb-3">
-          <i class="fas fa-briefcase fa-2x text-primary me-3"></i>
-          <div>
-            <h5 class="mb-1">Criação de Empregos</h5>
-            <p class="text-muted">A transição energética cria milhares de empregos em tecnologias renováveis e infraestrutura.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="impact-card">
+            <i class="fas fa-people-arrows"></i>
+            <div>
+              <h5>Educação Ambiental</h5>
+              <p>Conscientização sobre o uso sustentável dos recursos naturais.</p>
+            </div>
           </div>
-        </li>
-        <li class="d-flex align-items-start mb-3">
-          <i class="fas fa-seedling fa-2x text-primary me-3"></i>
-          <div>
-            <h5 class="mb-1">Educação Ambiental</h5>
-            <p class="text-muted">Promove conscientização sobre sustentabilidade e o uso responsável dos recursos naturais.</p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
-    <p>Saiba mais sobre <a href="contato.html">como contribuir</a> para um futuro sustentável.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>Nosso objetivo é conscientizar e incentivar o uso de fontes de energia limpa e renovável, contribuindo para um futuro mais sustentável.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links Úteis</h5>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="tipos.html">Tipos de Energia</a></p>
+          <p><a href="beneficios.html">Benefícios</a></p>
+          <p><a href="contato.html">Contato</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <div>
+            <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+            <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+            <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+            <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->

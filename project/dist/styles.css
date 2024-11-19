@@ -19,92 +19,41 @@ a:hover {
 }
 
 /* Header Navigation */
-.header nav {
-  background-color: #003b8b; /* Tom mais escuro para contraste */
-}
-
-.header nav .navbar-brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.header nav .nav-link {
-  font-size: 1rem;
-  color: #fff;
-  transition: color 0.3s ease-in-out;
-}
-
-.header nav .nav-link:hover {
-  color: #80d4ff;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../img/hero-bg.jpg") center/cover no-repeat;
+.hero-header {
+  background: url('img/energia-limpa.jpg') no-repeat center center/cover;
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
   text-align: center;
-  color: #fff;
+  position: relative;
 }
-
-.hero h1 {
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-header h1 {
   font-size: 3rem;
   font-weight: bold;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
 }
-
-.hero p {
+.hero-header p {
   font-size: 1.2rem;
-  font-weight: 300;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  z-index: 2;
+  position: relative;
 }
 
-.hero .btn {
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 50px;
-  background-color: #007bff; /* Mais suave e moderno */
-  color: #fff;
-  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
-  transition: all 0.3s ease-in-out;
-}
 
-.hero .btn:hover {
-  background-color: #0056b3;
-  box-shadow: 0 12px 20px rgba(0, 123, 255, 0.5);
-  transform: translateY(-3px);
-}
-
-/* Footer */
-.footer {
-  background-color: #003b8b;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.footer a {
-  color: #80d4ff;
-  font-weight: bold;
-}
-
-.footer a:hover {
-  color: #fff;
-}
 
 
 
@@ -163,6 +112,12 @@ a:hover {
   line-height: 1.6; 
 }
 
+
+
+
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .tipos .card {
@@ -186,7 +141,7 @@ a:hover {
 
 .section h2 {
   text-align: center;
-  color: #0056b3; 
+  color: #0b0b0c; 
   font-size: 2.5rem; 
   font-weight: 700;
   margin-bottom: 2rem;
@@ -299,23 +254,20 @@ main {
 }
 
 .footer {
-  background-color: #0056b3;
+  background-color: rgba(48, 45, 45, 0.5);
   color: white;
-  padding: 1.5rem 0;
-  text-align: center;
+  padding: 40px 20px;
 }
-
-.footer p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-.footer a {
-  color: #ffc107;
-  text-decoration: none;
+.footer h5 {
+  font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 15px;
 }
-
+.footer p, .footer a {
+  font-size: 0.9rem;
+  color: #e7ebe7;
+  text-decoration: none;
+}
 .footer a:hover {
   text-decoration: underline;
 }
@@ -324,7 +276,7 @@ main {
 .videos h2 {
   font-size: 2.5rem; 
   font-weight: bold;
-  color: #0056b3;
+  color: #080f16;
   margin-bottom: 3rem;
   text-align: center; 
 }
@@ -336,7 +288,7 @@ main {
 
 /* Ajustes para o Carrossel */
 .carousel-indicators button {
-  background-color: #0056b3;
+  background-color: #070c13;
 }
 
 .carousel-indicators .active {
@@ -363,7 +315,7 @@ main {
 .contato h2 {
     font-size: 2.5rem; 
     font-weight: bold;
-    color: #0056b3;
+    color: #070e16;
     margin-bottom: 3rem;
     text-align: center; 
   
@@ -379,25 +331,25 @@ main {
 .contato form .form-control {
   padding: 0.75rem;
   border-radius: 0.5rem;
-  border: 1px solid #0056b3;
+  border: 1px solid #0f1113;
 }
 .contato form .form-control:focus {
-  border-color: rgb(0, 98.4, 204);
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: rgb(16, 21, 26);
+  box-shadow: 0 0 5px rgba(6, 7, 7, 0.5);
 }
 .contato form button {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #0056b3;
+  background-color: #161a1f;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 .contato form button:hover {
-  background-color: rgb(0, 98.4, 204);
+  background-color: rgb(4, 6, 8);
 }
 
 
@@ -441,7 +393,7 @@ body {
 }
 
 .hero-section .btn {
-  background-color: #0056b3;
+  background-color: #080d11;
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
@@ -451,7 +403,7 @@ body {
 }
 
 .hero-section .btn:hover {
-  background-color: #003f7f;
+  background-color: #010102;
   transform: translateY(-3px);
 }
 
