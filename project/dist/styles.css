@@ -264,9 +264,11 @@ main {
 
 /* Estilo da Seção de Vídeos */
 .videos h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; 
   font-weight: bold;
   color: #0056b3;
+  margin-bottom: 3rem;
+  text-align: center; 
 }
 
 .videos p {
@@ -301,10 +303,12 @@ main {
   padding: 4rem 0;
 }
 .contato h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #0056b3;
-  margin-bottom: 2rem;
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 3rem;
+    text-align: center; 
+  
 }
 .contato form {
   max-width: 600px;
