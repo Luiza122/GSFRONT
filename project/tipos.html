@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,13 +7,105 @@
   <title>Energia Limpa - Tipos de Energia</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="dist/styles.css">
- 
+  <style>
+    /* Header e Footer com cores unificadas */
+    .hero-header {
+      background: url('img/energia-limpa.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+    .hero-header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .bg-custom {
+      background-color: rgba(48, 45, 45, 0.5); 
+      color: white;
+    }
+    .bg-custom a {
+      color: #b7e4c7;
+      text-decoration: none;
+    }
+    .bg-custom a:hover {
+      color: #f0f5f1;
+      text-decoration: underline;
+    }
+
+    /* Tipos de Energia Section */
+    .tipos .card {
+      border: none;
+      background-color: #f8f9fa;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tipos .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .tipos .card img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .tipos .card-title {
+      color: #030806;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: rgba(48, 45, 45, 0.5);
+      color: white;
+      padding: 40px 20px;
+    }
+    .footer h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer p, .footer a {
+      font-size: 0.9rem;
+      color: #e7ebe7;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <header>
+    <div class="hero-header">
+      <h1>Transformando o Futuro com Energia Sustentável</h1>
+      <p>Unindo forças para preservar nosso planeta e adotar fontes de energia renováveis.</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Energia Limpa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -111,13 +204,42 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
-    <p>Saiba mais sobre <a href="contato.html">como contribuir</a> para um futuro sustentável.</p>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>Nosso objetivo é conscientizar e incentivar o uso de fontes de energia limpa e renovável, contribuindo para um futuro mais sustentável.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links Úteis</h5>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="tipos.html">Tipos de Energia</a></p>
+          <p><a href="beneficios.html">Benefícios</a></p>
+          <p><a href="contato.html">Contato</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <div>
+            <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+            <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+            <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+            <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+  
