@@ -645,7 +645,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Botão Voltar ao Topo */
+
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -682,8 +682,8 @@ section img:hover {
 
 
 
+..............................
 
-/* Estilo Geral para a Área de Conteúdo */
 main {
   background-color: #ffffff;
   padding: 50px;
@@ -691,7 +691,7 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção: "O que é Energia Limpa?" */
+
 #energia-limpa {
   margin-bottom: 50px;
 }
@@ -770,7 +770,7 @@ main {
   line-height: 1.5;
 }
 
-/* Seção: Contribuir */
+
 #contribuir {
   padding: 20px;
   border: 2px dashed #00bfa6;
@@ -881,7 +881,7 @@ main {
 
 
 
-/* Fundo Animado para a Seção */
+
 .videos {
   background: linear-gradient(180deg, #e0f7fa 0%, #f0fcf9 100%);
   padding: 60px 20px;
@@ -910,7 +910,7 @@ main {
   }
 }
 
-/* Títulos e Descrições */
+
 .videos h2 {
   font-size: 3rem;
   color: #028090;
@@ -938,7 +938,7 @@ main {
   }
 }
 
-/* Estilo do Carrossel */
+
 .carousel {
   position: relative;
 }
@@ -951,11 +951,11 @@ main {
 }
 
 .carousel-item iframe:hover {
-  transform: scale(1.05); /* Zoom suave */
+  transform: scale(1.05); 
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* Animação de Troca de Slides */
+
 .carousel-inner .carousel-item {
   opacity: 0;
   transform: scale(0.95);
@@ -1043,7 +1043,6 @@ main {
 
 
 
-/* Geral da Seção de Contato */
 .contato {
   background: linear-gradient(180deg, #e0f7fa 0%, #f0fcf9 100%);
   padding: 60px 20px;
@@ -1051,7 +1050,7 @@ main {
   overflow: hidden;
 }
 
-/* Formulário */
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -1059,10 +1058,9 @@ main {
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Centraliza o conteúdo */
+  text-align: center; 
 }
 
-/* Campos do Formulário */
 .contact-form .form-control {
   border: 2px solid #028090;
   border-radius: 10px;
@@ -1077,9 +1075,8 @@ main {
   box-shadow: 0 0 10px rgba(0, 191, 166, 0.5);
 }
 
-/* Botão de Enviar */
 .contact-form .btn {
-  background: linear-gradient(135deg, #030705, #696d6b); /* Degradê verde */
+  background: linear-gradient(135deg, #030705, #696d6b); 
   color: #ffffff;
   padding: 12px 40px;
   font-size: 1.2rem;
@@ -1087,26 +1084,26 @@ main {
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  display: inline-block; /* Para centralizar */
+  display: inline-block; 
   margin-top: 20px;
   text-transform: uppercase;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Efeito hover no botão */
+
 .contact-form .btn:hover {
   background: linear-gradient(135deg, #218838, #196f2b);
-  transform: scale(1.05); /* Aumenta levemente o botão */
+  transform: scale(1.05); 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Centralização do Botão */
+
 .contact-form .btn-container {
-  text-align: center; /* Centraliza o botão */
+  text-align: center; 
 }
 
-/* Animação de entrada para o botão */
+
 .contact-form .btn {
   animation: bounceIn 1.5s ease-out;
 }
@@ -1125,7 +1122,7 @@ main {
   }
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .contact-form {
     padding: 20px;
