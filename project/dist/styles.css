@@ -1051,68 +1051,6 @@ main {
   overflow: hidden;
 }
 
-/* Fundo Animado */
-.contato::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(0, 191, 166, 0.3), rgba(0, 128, 144, 0.1), transparent 80%);
-  animation: rotateGradient 20s linear infinite;
-  z-index: -1;
-}
-
-@keyframes rotateGradient {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Títulos e Descrição */
-.contato h2 {
-  font-size: 3rem;
-  color: #028090;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-  animation: fadeInDown 1.5s ease-in-out;
-}
-
-.contato p {
-  font-size: 1.2rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 40px;
-  animation: fadeInUp 1.5s ease-in-out;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Formulário */
 .contact-form {
   max-width: 600px;
@@ -1121,26 +1059,16 @@ main {
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  animation: scaleUp 1.5s ease;
+  text-align: center; /* Centraliza o conteúdo */
 }
 
-@keyframes scaleUp {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Inputs e Textarea */
+/* Campos do Formulário */
 .contact-form .form-control {
   border: 2px solid #028090;
   border-radius: 10px;
   padding: 12px;
   font-size: 1rem;
+  margin-bottom: 20px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1151,47 +1079,63 @@ main {
 
 /* Botão de Enviar */
 .contact-form .btn {
-  background-color: #028090;
-  color: #fff;
-  padding: 12px 25px;
+  background: linear-gradient(135deg, #030705, #696d6b); /* Degradê verde */
+  color: #ffffff;
+  padding: 12px 40px;
   font-size: 1.2rem;
-  border-radius: 10px;
+  font-weight: bold;
+  border-radius: 50px;
   border: none;
-  transition: background-color 0.4s ease, transform 0.4s ease;
-  animation: bounceIn 1.5s ease;
+  cursor: pointer;
+  display: inline-block; /* Para centralizar */
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Efeito hover no botão */
 .contact-form .btn:hover {
-  background-color: #00bfa6;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #218838, #196f2b);
+  transform: scale(1.05); /* Aumenta levemente o botão */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.contact-form .btn:active {
-  transform: scale(1);
+/* Centralização do Botão */
+.contact-form .btn-container {
+  text-align: center; /* Centraliza o botão */
+}
+
+/* Animação de entrada para o botão */
+.contact-form .btn {
+  animation: bounceIn 1.5s ease-out;
 }
 
 @keyframes bounceIn {
-  0%, 100% {
-    transform: translateY(0);
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
   50% {
     transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .contato {
-    padding: 40px 15px;
-  }
-
   .contact-form {
-    padding: 20px 15px;
+    padding: 20px;
   }
 
   .contact-form .btn {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
 }
+
+
 
