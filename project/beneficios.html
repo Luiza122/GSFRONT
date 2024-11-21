@@ -6,138 +6,10 @@
   <title>Energia Limpa - Benefícios</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Header e Footer */
-     /* Hero Section */
-     .hero-header {
-      background: url('img/energia-limpa.jpg') no-repeat center center/cover;
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      position: relative;
-    }
-    .hero-header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    .hero-header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      z-index: 2;
-      position: relative;
-    }
-    .hero-header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      z-index: 2;
-      position: relative;
-    }
-    /* Benefícios Section */
-    .benefits-section {
-      padding: 60px 0;
-      background: linear-gradient(135deg, #f8f9fa 50%, #e9f5ee 50%);
-    }
-    .benefits-section h2 {
-      color: #1b4332;
-      font-weight: bold;
-      font-size: 2.5rem;
-    }
-    .benefit-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      padding: 20px;
-      text-align: center;
-    }
-    .benefit-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    }
-    .benefit-card i {
-      font-size: 3rem;
-      color: #1b4332;
-      margin-bottom: 15px;
-    }
-    .benefit-card h5 {
-      font-weight: bold;
-      color: #1b4332;
-      margin-bottom: 10px;
-    }
-    .benefit-card p {
-      color: #555;
-      font-size: 0.95rem;
-    }
+  <link rel="stylesheet" href="dist/styles.css">
 
-    /* Separador */
-    .separator {
-      width: 80px;
-      height: 4px;
-      background: #1b4332;
-      margin: 20px auto;
-    }
-
-    /* Impacto Social */
-    .impact-section {
-      padding: 60px 0;
-      background-color: #f8f9fa;
-    }
-    .impact-card {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      border-radius: 10px;
-      background: white;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .impact-card:hover {
-      transform: translateY(-5px);
-    }
-    .impact-card i {
-      font-size: 3rem;
-      color: #1b4332;
-      margin-right: 20px;
-    }
-    .impact-card h5 {
-      color: #1b4332;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .impact-card p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .footer {
-      background-color: rgba(48, 45, 45, 0.5);
-      color: white;
-      padding: 40px 20px;
-    }
-    .footer h5 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .footer p, .footer a {
-      font-size: 0.9rem;
-      color: #e7ebe7;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    
+ 
 </head>
 <body>
   <!-- Header -->
@@ -165,30 +37,38 @@
       </div>
     </nav>
   </header>
-
-  <!-- Benefícios -->
+  <button id="back-to-top">⬆</button>
   <section class="benefits-section">
     <div class="container">
       <h2 class="text-center">Benefícios da Energia Limpa</h2>
       <div class="separator"></div>
       <div class="row mt-5">
+        <!-- Cartão 1 -->
         <div class="col-md-4 mb-4">
           <div class="benefit-card">
-            <i class="fas fa-leaf"></i>
+            <div class="background">
+              <img src="img/air-clean.gif" alt="Ar mais limpo">
+            </div>
             <h5>Ar mais limpo</h5>
             <p>Redução de poluentes e gases de efeito estufa para um ar mais puro.</p>
           </div>
         </div>
+        <!-- Cartão 2 -->
         <div class="col-md-4 mb-4">
           <div class="benefit-card">
-            <i class="fas fa-globe"></i>
+            <div class="background">
+              <img src="img/preservation.gif" alt="Preservação">
+            </div>
             <h5>Preservação</h5>
             <p>Conservação de recursos naturais essenciais para futuras gerações.</p>
           </div>
         </div>
+        <!-- Cartão 3 -->
         <div class="col-md-4 mb-4">
           <div class="benefit-card">
-            <i class="fas fa-chart-line"></i>
+            <div class="background">
+              <img src="img/green-economy.gif" alt="Economia Verde">
+            </div>
             <h5>Economia Verde</h5>
             <p>Oportunidades de emprego e crescimento econômico sustentável.</p>
           </div>
@@ -196,6 +76,8 @@
       </div>
     </div>
   </section>
+  
+  
 
   <!-- Impacto Social -->
   <section class="impact-section">
@@ -259,4 +141,6 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="script.js"></script>
+
 </html>

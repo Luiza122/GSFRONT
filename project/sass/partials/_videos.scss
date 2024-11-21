@@ -1,17 +1,114 @@
+// Variáveis Globais
+$primary-color: #0b3d91; // Azul escuro
+$secondary-color: #00aaff; // Azul claro
+$background-color: #f8f9fa; // Cinza claro
+$text-color: #212529; // Preto suave
+$highlight-color: #ffd700; // Amarelo ouro
+
+// Tipografia
+$font-family: 'Poppins', sans-serif;
+
+// Animação para Indicadores
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 170, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+  }
+}
+
+// Seção de Vídeos
 .videos {
-    padding: 4rem 0;
-  
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 2rem;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+
+  h2 {
+    font-family: $font-family;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: $font-family;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+
+  .carousel {
+    position: relative;
+
+    .carousel-inner {
+      .carousel-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        iframe {
+          width: 100%;
+          max-width: 800px;
+          height: 450px;
+          border-radius: 10px;
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
     }
-  
-    iframe {
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    .carousel-indicators {
+      button {
+        background-color: white;
+        border: 2px solid $secondary-color;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 5px;
+
+        &.active {
+          animation: pulse 1s infinite;
+          background-color: $highlight-color;
+          border: none;
+        }
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-size: 1.5rem;
+        color: $primary-color;
+      }
+
+      &:hover {
+        background: $secondary-color;
+        span {
+          color: white;
+        }
+      }
     }
   }
-  
+}

@@ -6,79 +6,11 @@
   <title>Energia Limpa - Home</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Hero Section */
-    .hero-header {
-      background: url('img/energia-limpa.jpg') no-repeat center center/cover;
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      position: relative;
-    }
-    .hero-header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    .hero-header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      z-index: 2;
-      position: relative;
-    }
-    .hero-header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      z-index: 2;
-      position: relative;
-    }
-
-    /* Vantagens Section */
-    .vantagens-section img {
-      width: 80px; /* Ajusta o tamanho dos ícones */
-      height: auto;
-      margin-bottom: 15px;
-      background-color: transparent; /* Remove qualquer fundo aplicado pelo CSS */
-      border: none;
-    }
-    .vantagens-section h5 {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    
-
-    /* Footer */
-    .footer {
-      background-color: rgba(48, 45, 45, 0.5);
-      color: white;
-      padding: 40px 20px;
-    }
-    .footer h5 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .footer p, .footer a {
-      font-size: 0.9rem;
-      color: #e7ebe7;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="dist/styles.css">
+ 
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header com Fundo Animado -->
   <header>
     <div class="hero-header">
       <h1>Transformando o Futuro com Energia Sustentável</h1>
@@ -98,12 +30,14 @@
             <li class="nav-item"><a class="nav-link" href="videos.html">Vídeos</a></li>
             <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
           </ul>
-        </div>
       </div>
     </nav>
   </header>
 
-  <!-- Main Content -->
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="back-to-top">⬆</button>
+
   <main class="container my-5">
     <!-- O que é Energia Limpa -->
     <section id="energia-limpa" class="my-5">
@@ -154,8 +88,11 @@
   
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+
+
+
+   <!-- Footer -->
+   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -188,4 +125,8 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="script.js"></script>
+</body>
 </html>
+
+  
