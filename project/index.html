@@ -13,8 +13,13 @@
   <!-- Header com Fundo Animado -->
   <header>
     <div class="hero-header">
-      <h1>Transformando o Futuro com Energia Sustentável</h1>
-      <p>Unindo forças para preservar nosso planeta e adotar fontes de energia renováveis.</p>
+      <div class="background-gif-container">
+        <img id="background-gif" src="img/gif1.gif" alt="Background GIF">
+      </div>
+      <div class="content">
+        <h1>Transformando o Futuro com Energia Sustentável</h1>
+        <p>Unindo forças para preservar nosso planeta e adotar fontes de energia renováveis.</p>
+      </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
@@ -30,18 +35,21 @@
             <li class="nav-item"><a class="nav-link" href="videos.html">Vídeos</a></li>
             <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
           </ul>
+        </div>
       </div>
     </nav>
   </header>
+  
+  
 
 
   <!-- Botão Voltar ao Topo -->
   <button id="back-to-top">⬆</button>
 
-  <main class="container my-5">
+  <main class="container my-5"> 
     <!-- O que é Energia Limpa -->
     <section id="energia-limpa" class="my-5">
-      <h2 class="text-center mb-4">O que é Energia Limpa?</h2>
+      <h2 class="titulo">O que é Energia Limpa?</h2>
       <div class="row">
         <div class="col-md-6">
           <img src="img/renováveis.jpg" alt="Energia Limpa" class="img-fluid rounded shadow-sm">
@@ -75,6 +83,7 @@
       </div>
     </section>
 
+    <!-- Como Você Pode Contribuir -->
     <section id="contribuir" class="my-5">
       <h2 class="text-center mb-4">Como Você Pode Contribuir?</h2>
       <p>Contribuir para o uso de energia limpa não é difícil! Aqui estão algumas maneiras:</p>
@@ -85,8 +94,22 @@
         <li>Promover o uso de transporte público ou veículos elétricos.</li>
       </ul>
     </section>
+
   
-  </main>
+
+    
+
+    <!-- Casos de Sucesso -->
+    <section id="casos-sucesso" class="my-5">
+      <h2 class="text-center mb-4">Casos de Sucesso</h2>
+      <p>Aqui estão exemplos de como a energia limpa já transformou comunidades e negócios:</p>
+      <ul>
+        <li><strong>Usinas solares na África:</strong> Proporcionaram eletricidade a milhares de lares em regiões isoladas.</li>
+        <li><strong>Fazendas eólicas na Europa:</strong> Reduziram significativamente a emissão de gases de efeito estufa.</li>
+        <li><strong>Projetos de biomassa no Brasil:</strong> Reaproveitam resíduos agrícolas para geração de energia, promovendo economia circular.</li>
+      </ul>
+    </section>
+</main>
 
 
 
@@ -126,7 +149,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <script src="script.js"></script>
+<script> const gifs = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif"]; 
+  const gifElement = document.getElementById("background-gif");
+  let currentGifIndex = 0;
+  
+  function changeGif() {
+    currentGifIndex = (currentGifIndex + 1) % gifs.length; 
+    gifElement.src = gifs[currentGifIndex];
+  }
+  
+  // Troca o GIF a cada 5 segundos (5000ms)
+  setInterval(changeGif, 5000);
+  </script>
 </body>
 </html>
-
-  

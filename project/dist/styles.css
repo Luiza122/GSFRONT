@@ -1,23 +1,21 @@
 @charset "UTF-8";
 
 
-
-/* Remove fundo, margens e espaçamentos indesejados */
 body {
   margin: 0;
   padding: 0;
-  background: none; /* Remove qualquer fundo global */
+  background: none; /
 }
 
 #tipos {
-  background: none; /* Remove fundo da seção */
+  background: none; 
   margin: 0;
   padding: 0;
-  box-shadow: none; /* Remove sombras, se aplicável */
+  box-shadow: none; 
 }
 
 footer {
-  margin-top: 0; /* Remove espaçamento extra antes do rodapé */
+  margin-top: 0;
 }
 
 
@@ -26,7 +24,7 @@ footer {
 
 
 
-/* Estilo Geral da Seção */
+
 #tipos {
   background: linear-gradient(180deg, #f0fdf9 0%, #e6faf5 100%);
   padding: 60px 20px;
@@ -103,7 +101,7 @@ footer {
   line-height: 1.8;
 }
 
-/* Cards - Design Sofisticado */
+
 .card {
   border: none;
   border-radius: 15px;
@@ -119,7 +117,6 @@ footer {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagem */
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -133,7 +130,7 @@ footer {
   filter: brightness(0.9);
 }
 
-/* Títulos dos Cards */
+
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -148,7 +145,6 @@ footer {
   color: #00bfa6;
 }
 
-/* Texto dos Cards */
 .card-text {
   font-size: 1rem;
   color: #4f4f4f;
@@ -156,7 +152,7 @@ footer {
   line-height: 1.6;
 }
 
-/* Adição de Bordas Animadas */
+
 .card::before {
   content: '';
   position: absolute;
@@ -372,26 +368,27 @@ footer {
 }
 
 
-/* Footer */
 .footer {
-  background-color: rgba(48, 45, 45, 0.5);
+  background-color: black;
   color: white;
   padding: 40px 20px;
 }
+
 .footer h5 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 .footer p, .footer a {
   font-size: 0.9rem;
   color: #e7ebe7;
   text-decoration: none;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }
-
 
 
 
@@ -504,7 +501,7 @@ h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Cartões de Impacto */
+
 .impact-card {
   position: relative;
   display: flex;
@@ -543,7 +540,7 @@ h2 {
   filter: brightness(0.6);
 }
 
-/* Texto nos Cartões de Impacto */
+
 .impact-card h5 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -561,7 +558,7 @@ h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .benefit-card,
   .impact-card {
@@ -585,65 +582,7 @@ h2 {
 
 
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #e0f2f1;
-  color: #263238;
-}
 
-
-.hero-header {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  color: white;
-  z-index: 1;
-}
-
-.hero-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #00bfa6, #00695c, #00bfa6);
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
-  z-index: -1;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.hero-header h1 {
-  font-size: 3rem;
-  animation: fadeInDown 1.5s ease-out;
-}
-
-.hero-header p {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  animation: fadeInUp 2s ease-out;
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
 
 #back-to-top {
@@ -665,143 +604,93 @@ body {
   transform: scale(1.2);
 }
 
-/* Estilização das Seções */
-section {
-  margin: 50px 0;
+
+
+
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f9f9;
+  color: #333333; 
+  margin: 0;
+  padding: 0;
 }
 
-section img {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-section img:hover {
-  transform: scale(1.05);
-}
-
-
-
-..............................
 
 main {
   background-color: #ffffff;
   padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 
-#energia-limpa {
-  margin-bottom: 50px;
-}
-
-#energia-limpa h2 {
-  font-size: 2.5rem;
-  color: #00bfa6;
-  font-weight: bold;
-  position: relative;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-#energia-limpa h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: #00695c;
-  margin: 10px auto;
-  border-radius: 3px;
-}
-
-#energia-limpa img {
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#energia-limpa img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-#energia-limpa p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555555;
-  text-align: justify;
+section {
+  margin: 50px 0;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Seção: Vantagens */
-.vantagens-section {
-  padding: 20px 0;
-  background-color: #f0f4f3;
-  border-radius: 10px;
-}
 
-.vantagens-section h2 {
+section h2,
+.titulo {
   font-size: 2.5rem;
-  color: #00bfa6;
-  margin-bottom: 30px;
-}
-
-.vantagens-section .col-md-4 img {
-  width: 100px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.vantagens-section .col-md-4 img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.vantagens-section h5 {
-  font-size: 1.2rem;
-  color: #00695c;
-  margin: 15px 0;
+  color: #00bfa6; 
   text-transform: uppercase;
-}
-
-.vantagens-section p {
-  font-size: 1rem;
-  color: #555555;
-  line-height: 1.5;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center; 
 }
 
 
-#contribuir {
-  padding: 20px;
-  border: 2px dashed #00bfa6;
-  background-color: #ffffff;
-  border-radius: 10px;
+section h2::after,
+.titulo::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #00695c; 
+  margin: 15px auto;
+  border-radius: 3px;
 }
 
-#contribuir h2 {
-  font-size: 2rem;
-  color: #00bfa6;
+
+section img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%; 
+  display: block;
+  margin: 0 auto; 
+}
+
+section img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555555; 
+  text-align: justify; 
   margin-bottom: 20px;
 }
 
-#contribuir p {
-  font-size: 1.1rem;
-  color: #555555;
-  margin-bottom: 15px;
+
+section p.lead {
+  font-weight: bold;
+  color: #00695c; 
 }
 
-#contribuir ul {
-  list-style-type: disc;
-  padding-left: 40px;
-}
 
-#contribuir ul li {
-  font-size: 1.1rem;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-/* Animações */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -814,6 +703,165 @@ main {
 }
 
 
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+
+  section h2,
+  .titulo {
+    font-size: 2rem;
+  }
+
+  section img {
+    width: 100%; 
+  }
+
+  section p {
+    font-size: 1rem; 
+  }
+}
+
+
+#energia-limpa {
+  background-color: #ffffff; 
+  border: 2px dashed #00bfa6; ; 
+}
+
+#energia-limpa p.lead {
+  font-weight: bold;
+  color: #00695c; /
+}
+#energia-limpa .titulo {
+  font-size: 2.5rem;
+  color: #00bfa6; 
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#energia-limpa .titulo::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #00695c; 
+  margin: 15px auto;
+  border-radius: 3px;
+}
+
+
+.vantagens-section {
+  padding: 30px;
+  background-color: #ffffff; 
+  border: 2px dashed #00bfa6; 
+  border-radius: 15px;
+}
+
+.vantagens-section .col-md-4 img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vantagens-section .col-md-4 img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.vantagens-section h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00695c; 
+  margin: 10px 0;
+}
+
+.vantagens-section p {
+  font-size: 1.1rem;
+  color: #555555; 
+  line-height: 1.6;
+}
+
+
+#contribuir {
+  padding: 30px;
+  background-color: #ffffff; 
+  border: 2px dashed #00bfa6; 
+  border-radius: 15px;
+}
+
+#contribuir ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contribuir ul li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.2rem;
+  color: #333333; 
+  margin-bottom: 10px;
+}
+
+#contribuir ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #00bfa6; 
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00bfa6; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00695c; 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  .vantagens-section .col-md-4 img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .vantagens-section h5 {
+    font-size: 1.2rem;
+  }
+}
 
 
 
@@ -843,12 +891,19 @@ main {
 
 
 
-/* Botão Voltar ao Topo */
+
+
+
+
+
+
+
+
 #back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none; /* Inicialmente escondido */
+  display: none; 
   width: 50px;
   height: 50px;
   background-color: #00bfa6;
@@ -985,7 +1040,7 @@ main {
   opacity: 1;
 }
 
-/* Controles do Carrossel */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #028090;
@@ -1002,7 +1057,7 @@ main {
   transform: scale(1.1);
 }
 
-/* Botões de Saiba Mais */
+
 .carousel-caption {
   background: rgba(0, 128, 144, 0.8);
   padding: 10px 20px;
@@ -1136,3 +1191,61 @@ main {
 
 
 
+
+
+
+
+
+.hero-header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.background-gif-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.hero-header .content {
+  z-index: 1;
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+.hero-header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}

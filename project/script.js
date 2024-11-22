@@ -15,7 +15,6 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-// Animações extras para elementos que entram na tela
 const cards = document.querySelectorAll('.benefit-card, .impact-card');
 
 const observer = new IntersectionObserver((entries) => {
@@ -29,3 +28,27 @@ const observer = new IntersectionObserver((entries) => {
 cards.forEach((card) => {
   observer.observe(card);
 });
+
+
+
+// Lista de GIFs dentro da pasta img
+const gifs = [
+  "img/gif1.gif", 
+  "img/gif2.gif", 
+  "img/gif3.gif", 
+  "img/gif4.gif", 
+  "img/gif5.gif",
+  "img/gif6.gif",
+  "img/gif7.gif"
+]; 
+
+const gifElement = document.getElementById("background-gif");
+let currentGifIndex = 0;
+
+function changeGif() {
+  currentGifIndex = (currentGifIndex + 1) % gifs.length; // Avança para o próximo GIF
+  gifElement.src = gifs[currentGifIndex];
+}
+
+// Troca o GIF a cada 5 segundos (5000ms)
+setInterval(changeGif, 5000);
